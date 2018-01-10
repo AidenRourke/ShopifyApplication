@@ -13,6 +13,10 @@ body {
   overflow: hidden;
 }
 
+p {
+  margin-bottom: 1.5vh;
+}
+
 .App {
   position: absolute;
   top: 0;
@@ -27,7 +31,7 @@ body {
   padding-bottom: 2vh;
   padding-left: 2vh;
   padding-right: 2vh;
-  max-width: 75vh;
+  max-width: 76vh;
   max-height: 100%;
   position: absolute;
   left:0; right:0;
@@ -49,6 +53,7 @@ body {
 .Subscribe {
   color: #ffffff;
   padding-top: 7vh;
+  padding-bottom: 2vh;
 }
 /*
 -webkit-border-radius: 6px;
@@ -67,7 +72,7 @@ body {
   width: 35vh;
   height: 6vh;
   color: #7B7B7B;
-  padding: 2vh;
+  padding-left: 3%;
   outline: none;
   border: none;
   border-radius: 6px;
@@ -78,7 +83,7 @@ body {
   width: 35vh;
   height: 6vh;
   color: #000000;
-  padding: 2vh;
+  padding-left: 3%;
   outline: none;
   border: none;
   border-radius: 6px;
@@ -90,11 +95,11 @@ body {
 }
 
 .DropDownText {
-  padding: 2vh;
-  vertical-align: middle;
+  vertical-align: top;
   width: 25vh;
   height: 6vh;
   color: #7B7B7B;
+  padding-left: 3%;
   outline: none;
   border: none;
   border-top-left-radius: 6px;
@@ -102,16 +107,13 @@ body {
 }
 
 .DropDownButton {
-  border-left: 1px solid #7B7B7B;
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
+  border: none;
   height: 6vh;
-  width: 5vh;
+  width: 6vh;
   outline: none;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  vertical-align: middle;
+  vertical-align: top;
   top: 0;
 }
 
@@ -124,6 +126,7 @@ body {
 }
 
 .Icon {
+  margin: auto;
   height: 2.5vh;
 }
 
@@ -160,6 +163,7 @@ body {
 }
 
 .ErrorTextHidden {
+  font-size: 12px;
   opacity: 0;
 }
 
@@ -169,7 +173,7 @@ body {
 }
 
 .SignUpButton {
-  margin-top: 5vh;
+  margin-top: 4vh;
   border-radius: 6px;
   border: none;
   height: 6vh;
