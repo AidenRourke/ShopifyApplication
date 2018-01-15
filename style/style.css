@@ -67,17 +67,6 @@ p {
   float: left;
 }
 
-.EmailInputInit {
-  vertical-align: middle;
-  width: 35vh;
-  height: 6vh;
-  color: #7B7B7B;
-  padding-left: 3%;
-  outline: none;
-  border: none;
-  border-radius: 6px;
-}
-
 .EmailInput {
   vertical-align: middle;
   width: 35vh;

@@ -7,43 +7,20 @@ class Email extends Component {
     super(props);
 
     this.state = {
-      email: 'Email Address',
-      clicked: false,
-      classNameInput: "EmailInputInit",
+      email: '',
       submitted: false,
       classNameMenu: ["MenuHidden", false],
       classNameError: 'ErrorTextHidden',
       interest: "Interested in..."
     };
   }
-
-  //Allow user input
-  clicked() {
-    if (this.state.clicked === false) {
-      this.setState({clicked: true});
-      this.setState({classNameInput: "EmailInput"});
-      this.setState({email: ""});
-    }
-  }
-
-  //Toggle the menu
-  toggleMenu() {
-
-    if (this.state.classNameMenu[1] === false) { //Menu not showing
-      this.setState({classNameMenu: ["MenuShow", true]});
-    }
-    else {
-      this.setState({classNameMenu: ["MenuHidden", false]});
-    }
-  }
-
   //Check for valid input
   errorOrLog() {
     if (this.state.submitted) {
       if (this.state.email.match(/.+@.+/) && this.state.interest !== "Interested in...") {
         this.setState({
           classNameError: "ErrorTextHidden",
-          email: "Email Address",
+          email: "",
           classNameInput: "EmailInputInit"
         });
         console.log(`Email address: ${this.state.email}`);
@@ -68,8 +45,8 @@ class Email extends Component {
         <div>
           <div className="InputContainer">
             <input
-              className={this.state.classNameInput}
-              onClick={(event) => this.clicked(event)}
+              className="EmailInput"
+              placeholder="Email Address"
               value={this.state.email}
               onChange={(event) =>  this.setState({email: event.target.value})} />
             <p className={this.state.classNameError}>Please enter a valid email address</p>
